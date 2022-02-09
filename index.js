@@ -19,17 +19,10 @@ function save(){
     count = 0
 }
 
-function total(){
-    let num = save()
-    arr = [num]
-    sum += arr
-    show()
-}
-
 function show(){
     sumEl.textContent = "Total Entries: "
-    for( let i = 0; i < cards.length; i++){
-        sumEl.textContent += arr[i] + " "
+    for( let i = 0; i < arr.length; i++){
+        sum += arr[i] + " "
     }
     sumEl.textContent = "Sum: " + sum;
 }
